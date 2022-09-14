@@ -1,0 +1,46 @@
+.box {
+  border: 2px solid black;
+  height: 120px;
+  background-color: rgb(233, 149, 23);
+  font-weight: bold;
+  font-size: 20px;
+}
+.box--1-width {
+  width: 50%;
+  min-width: 150px;
+}
+.box--2-width {
+  width: 2em;
+}
+.box--3-width {
+  width: 1em;
+}
+.box:hover {
+  background-color: aqua;
+}
+
+.parent {
+  font-size: 20px;
+}
+
+@media only screen and (min-width: 401px) {
+  .box {
+    background-color: gold;
+  }
+  .box--1-width, .box --2-width, .box --3-width {
+    width: 100px;
+    min-width: 0;
+  }
+  .parent {
+    display: flex;
+    justify-content: space-around;
+  }
+  /* .box2-width {
+    width: 100px;
+  }
+  .box3-width {
+    width: 100px;
+  } */
+}
+
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,46 @@
+@import '_variables';
+
+.box {
+  border: 2px solid black;
+  height: 120px;
+  background-color: $reallyCoolColor;
+  font-weight: bold;
+  font-size: $normal;
+  &--1-width{
+    width: 50%;
+    min-width: 150px;
+  }
+  &--2-width{
+    width: 2em;
+  }
+  &--3-width{
+    width: 1em;
+  }
+  &:hover {
+    background-color: aqua;
+  }
+}
+.parent{
+  font-size: $normal;
+}
+
+
+@media only screen and (min-width: 401px) {
+  .box {
+    background-color: gold;
+    &--1-width, --2-width, --3-width{
+      width: 100px;
+      min-width: 0;
+    }
+  }
+  .parent {
+    display: flex;
+    justify-content: space-around;
+  }
+  /* .box2-width {
+    width: 100px;
+  }
+  .box3-width {
+    width: 100px;
+  } */
+  }
